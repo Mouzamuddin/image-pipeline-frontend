@@ -68,11 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# image-pipeline-frontend
 
-try this app here
+# image-pipeline-frontend
+Image Inpainting Frontend
+A React-based frontend for the Image Inpainting Widget. It allows users to upload an image, draw a mask, and send both images to the backend.
+
+Features
+Upload an image and draw a mask.
+Adjust brush size for drawing.
+View original and masked images.
+Send images to the backend for processing.
+Setup
+
+Install dependencies:
+
+npm install
+
+Set the backend URL: Create a .env file with:
+
+Start the app:
+
+npm start
+
+The frontend interacts with the backend API: https://github.com/Mouzamuddin/image-pipeline-backend.
+
+Live Demo
 https://imagepipelinemask.netlify.app/
 
-and the link for the backend is 
-https://github.com/Mouzamuddin/image-pipeline-backend
 
