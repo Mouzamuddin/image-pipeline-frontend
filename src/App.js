@@ -11,6 +11,8 @@ import {
 } from "@mui/material";
 import logo from './img/imagepipeline-logo.webp'; 
 import "./App.css";
+const baseurl = process.env.REACT_APP_BASE_URL;
+
 
 function App() {
   const canvasRef = useRef(null);
@@ -78,7 +80,7 @@ function App() {
     formData.append("description", "Example inpainting image");
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/upload/", {
+      const response = await fetch(`${baseurl}upload/`, {
         method: "POST",
         body: formData,
       });
