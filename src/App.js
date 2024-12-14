@@ -86,11 +86,13 @@ function App() {
       });
       const result = await response.json();
       if (response.ok) {
+        const result = await response.json();
         console.log("Upload successful:", result);
         setUploadedData(result.data);
         alert("Upload successful!");
       } else {
-        console.error("Upload failed:", result);
+        const errorResult = await response.json();
+        console.error("Upload failed:", errorResult);
         alert("Upload failed!");
       }
     } catch (error) {
