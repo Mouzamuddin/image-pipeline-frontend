@@ -10,7 +10,6 @@ import {
   Stack, 
 } from "@mui/material";
 import logo from './img/imagepipeline-logo.webp'; 
-
 import "./App.css";
 
 function App() {
