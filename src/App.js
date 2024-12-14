@@ -84,10 +84,11 @@ function App() {
         method: "POST",
         body: formData,
       });
-      const result = await response.json();
+      
+      const result = await response.json();  // This is the only assignment to 'result'
+    
       if (response.ok) {
-        const result = await response.json();
-        console.log("Upload successful:", result);
+        console.log("Upload successful:", result);  // Use 'result' here
         setUploadedData(result.data);
         alert("Upload successful!");
       } else {
@@ -99,6 +100,7 @@ function App() {
       console.error("Error:", error);
       alert("An error occurred during the upload.");
     }
+    
   };
 
   const clearCanvas = () => {
